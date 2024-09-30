@@ -88,10 +88,19 @@
               </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
-          </form>
+	<ul>
+  <form class="form-inline my-2 my-lg-0">
+    <!-- Added label for the search input -->
+    <label for="search-input" class="sr-only">Search</label>
+    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search the site">
+    
+    <button class="btn btn-success my-2 my-sm-0" type="submit" aria-label="Submit search">
+      Go
+    </button>
+  </form>
+</ul>
+	
+        
         </div>
       </div>
     </div>
